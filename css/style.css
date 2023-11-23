@@ -132,7 +132,7 @@ header {
 
 .left-hero-section h1 {
   color: var(--text);
-  font-size:3rem;
+  font-size: 3rem;
 }
 
 .left-hero-section p {
@@ -173,14 +173,15 @@ header {
   margin-left: 10px;
 }
 
-
 /* ENDHERO SECTION */
 
 /* END HEADER */
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 971px) {
+/* NAV RESPONSIVE */
+
+@media screen and (max-width: 1160px) {
   .navbar {
     position: fixed;
     width: 100%;
@@ -225,7 +226,7 @@ header {
 
   .nav-right a {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     margin-bottom: 1.2rem;
     margin-right: 0;
@@ -240,3 +241,5 @@ header {
     color: var(--button-background);
   }
 }
+
+
