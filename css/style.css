@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #012970;
+  --text-2: #444444;
+  --button-background: #4154f1;
+  --box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+  --who-are-we: #f6f9ff;
+}
+
+body {
+  height: 100vh;
+  font-family: Nunito;
+}
+
+/* HEADER */
+
+header {
+  background-image: url(/assets/img/hero-bg.png);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-right: 9rem;
+}
+
+.nav-left a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-left: 9rem;
+}
+
+.nav-right a {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.nav-right a:hover {
+  color: var(--button-background);
+}
+
+#activePage {
+  color: var(--button-background);
+  text-decoration: none;
+}
+
+.nav-right button {
+  width: 8rem;
+  height: 2.5rem;
+  padding: 10px;
+  background-color: var(--button-background);
+  color: var(--who-are-we);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav-right button:hover {
+  cursor: pointer;
+  background-color: var(--text);
+  color: var(--who-are-we);
+  transition: 0.5s;
+}
+
+#icon {
+  top: 0;
+  right: 0;
+  margin: 2rem 3rem 0 0;
+  float: right;
+  display: none;
+  font-size: 30px;
+  line-height: 80px;
+  position: absolute;
+  display: none;
+}
+
+/* END NAVBAR */
+
+/* HERO SECTION */
+
+.hero {
+  height: 100%;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+}
+
+.left-hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.left-hero-section h1 {
+  color: var(--text);
+  font-size:3rem;
+}
+
+.left-hero-section p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.left-hero-section a {
+  text-decoration: none;
+}
+
+.left-hero-section button {
+  display: flex;
+  flex-direction: row;
+  width: 12rem;
+  height: 3rem;
+  padding: 10px;
+  background-color: var(--button-background);
+  color: var(--who-are-we);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+}
+
+.left-hero-section button:hover {
+  cursor: pointer;
+  background-color: var(--text);
+  color: var(--who-are-we);
+  transition: 0.5s;
+}
+
+.left-hero-section button > img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+
+/* ENDHERO SECTION */
+
+/* END HEADER */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 971px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .nav-left {
+    margin-left: 2rem;
+  }
+
+  .nav-left a {
+    font-size: 1.8rem;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-right-links {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    z-index: 2;
+  }
+
+  .nav-right a {
+    display: flex;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    margin-right: 0;
+  }
+
+  .nav-right button {
+    display: none;
+  }
+
+  #icon {
+    display: flex;
+    color: var(--button-background);
+  }
+}
