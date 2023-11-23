@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlexStart</title>
-    <link rel="icon" href="./assets/img/logo.png">
-</head>
-<body>
+    <link rel="icon" href="./assets/img/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
 
+    <link
+      href="https://fonts.google.com/specimen/Nunito?query=nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
     <!-- HEADER -->
 
     <header>
-        <nav class="navbar">
-            <div class="nav-left">
-                <img src="./assets/img/logo.png" alt="image.png" class="header-logo">
+
+      <!-- NAVBAR -->
+
+      <nav>
+        <div class="navbar">
+          <div class="nav-left">
+            <div class="nav-left-logo">
+              <img
+                src="./assets/img/logo.png"
+                alt="image.png"
+                class="header-logo"
+                Jordan
+              />
             </div>
-        </nav>
+            <a href="./index.html">FlexStart</a>
+          </div>
+
+          <div class="nav-right" id="activePage">
+            <div class="nav-right-links">
+              <a href="./index.html">Home</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Portfolio</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact</a>
+            </div>
+            <a href="#"><button>Get Started</button></a>
+          </div>
+        </div>
+        <label id="icon">
+          <i class="fa fa-bars"></i>
+        </label>
+      </nav>
+
+      <!-- END NAVBAR -->
+
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-section">
+          <div class="left-hero-section">
+            <h1>
+              We offer modern solutions<br> for growing your business
+            </h1>
+            <p>We are a team of talented designers making websites</p>
+            <a href="#"><button>Get Started <img src="./assets/img/right-arrow.png" ></button></a>
+          </div>
+          <div class="right-hero-section">
+            <img src="./assets/img/hero-img.png">
+          </div>
+        </div>
+      </section>
     </header>
-</body>
+
+    <!-- END HERO SECTION -->
+    <!-- END HEADER -->
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>
