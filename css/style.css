@@ -23,9 +23,8 @@ body {
 
 header {
   background-image: url(/assets/img/hero-bg.png);
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 /* NAVBAR */
@@ -159,6 +158,7 @@ header {
   align-items: center;
   justify-content: center;
   box-shadow: var(--box-shadow);
+  margin-top: 10px;
 }
 
 .left-hero-section button:hover {
@@ -177,7 +177,7 @@ header {
 
 /* END HEADER */
 
-/* HEADER RESPONSIVE */
+/* MOBILE RESPONSIVE */
 
 @media screen and (min-width: 600px) and (max-width: 1160px) {
   .navbar {
@@ -276,8 +276,9 @@ header {
   }
 }
 
+/* TABLET RESPONSIVE */
+
 @media screen and (max-width: 600px) {
-  
   .navbar {
     position: fixed;
     width: 100%;
@@ -360,7 +361,7 @@ header {
     display: none;
   }
 
-  .left-hero-section  p{
+  .left-hero-section p {
     font-size: 1.2rem;
     width: 70%;
     display: flex;
@@ -380,3 +381,83 @@ header {
 
 /* END HEADER RESPONSIVE */
 
+/* WHO WE ARE */
+
+.wrw {
+  width: 100%;
+  height: 80vh;
+}
+
+.who-are-we {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-wrw {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 40px;
+  background-color: var(--who-are-we);
+}
+
+.left-wrw h2 {
+  font-size: 1.1rem;
+  color: var(--button-background);
+  text-transform: uppercase;
+}
+
+.left-wrw h3 {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.left-wrw p {
+  color: var(--text-2);
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.left-wrw a {
+  text-decoration: none;
+}
+
+.left-wrw > a > button {
+  display: flex;
+  flex-direction: row;
+  width: 12rem;
+  height: 3rem;
+  padding: 10px;
+  background-color: var(--button-background);
+  color: var(--who-are-we);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.left-wrw > a > button > img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.right-wrw {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.right-wrw > img {
+  width: 90%;
+  height: 75%;
+}
