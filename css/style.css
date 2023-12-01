@@ -19,6 +19,17 @@ body {
   font-family: Nunito;
 }
 
+h2 {
+  font-size: 1.1rem;
+  color: var(--button-background);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
 /* HEADER */
 
 header {
@@ -177,9 +188,125 @@ header {
 
 /* END HEADER */
 
-/* MOBILE RESPONSIVE */
+/* WHO WE ARE */
+
+.wrw {
+  width: 100%;
+  height: 80vh;
+}
+
+.who-are-we {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-wrw {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 40px;
+  background-color: var(--who-are-we);
+}
+
+.left-wrw p {
+  color: var(--text-2);
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.left-wrw a {
+  text-decoration: none;
+}
+
+.left-wrw > a > button {
+  display: flex;
+  flex-direction: row;
+  width: 12rem;
+  height: 3rem;
+  padding: 10px;
+  background-color: var(--button-background);
+  color: var(--who-are-we);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.left-wrw > a > button > img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.right-wrw {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.right-wrw > img {
+  width: 90%;
+  height: 75%;
+}
+
+/* END WHO ARE WE */
+
+/* OUR VALUES */
+
+.values {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+.values-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ovItems-ctn {
+  display: flex;
+}
+
+.ovItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.ovItem img {
+  width: 40%;
+}
+
+.ovItem p {
+  width: 60%;
+}
+
+/* END OUR VALUES */
+
+/* TABLET RESPONSIVE */
 
 @media screen and (min-width: 600px) and (max-width: 1160px) {
+
+  header {
+    height: 100vh;
+  }
   .navbar {
     position: fixed;
     width: 100%;
@@ -274,9 +401,23 @@ header {
     width: 20rem;
     height: 12rem;
   }
+
+  .wrw {
+    height: 30vh;
+    margin-top: 10rem;
+  }
+
+  .left-wrw {
+    width: 80%;
+  }
+
+  .right-wrw {
+    display: none;
+  }
 }
 
-/* TABLET RESPONSIVE */
+
+/* MOBILE RESPONSIVE */
 
 @media screen and (max-width: 600px) {
   .navbar {
@@ -377,87 +518,18 @@ header {
     width: 20rem;
     height: 12rem;
   }
+
+  .wrw {
+    margin-top: 7rem
+  }
+
+  .left-wrw {
+    width: 80%;
+  }
+
+  .right-wrw {
+    display: none;
+  }
 }
 
-/* END HEADER RESPONSIVE */
-
-/* WHO WE ARE */
-
-.wrw {
-  width: 100%;
-  height: 80vh;
-}
-
-.who-are-we {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-wrw {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding: 40px;
-  background-color: var(--who-are-we);
-}
-
-.left-wrw h2 {
-  font-size: 1.1rem;
-  color: var(--button-background);
-  text-transform: uppercase;
-}
-
-.left-wrw h3 {
-  font-size: 1.5rem;
-  color: var(--text);
-}
-
-.left-wrw p {
-  color: var(--text-2);
-  font-size: 1rem;
-  margin-top: 15px;
-}
-
-.left-wrw a {
-  text-decoration: none;
-}
-
-.left-wrw > a > button {
-  display: flex;
-  flex-direction: row;
-  width: 12rem;
-  height: 3rem;
-  padding: 10px;
-  background-color: var(--button-background);
-  color: var(--who-are-we);
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--box-shadow);
-  margin-top: 30px;
-  cursor: pointer;
-}
-
-.left-wrw > a > button > img {
-  width: 20px;
-  margin-left: 10px;
-}
-
-.right-wrw {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-}
-
-.right-wrw > img {
-  width: 90%;
-  height: 75%;
-}
+/* END RESPONSIVE */
